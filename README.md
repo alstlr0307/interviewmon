@@ -106,11 +106,11 @@
 
 ```mermaid
 flowchart TB
-  U[User] --> FE[Frontend (React/TS)]
-  FE -->|REST API| BE[Backend (Node/Express)]
+  U[User] --> FE[Frontend]
+  FE -->|REST API| BE[Backend]
   BE --> DB[(MySQL)]
-  BE --> AI[(OpenAI Feedback)]
-  FE -->|STT/TTS| WS[Web Speech API]
+  BE --> AI[(OpenAI)]
+  FE -->|STT TTS| WS[Web Speech API]
 ```
 
 - Frontend: 화면/타이머/인터랙션, STT/TTS 연동, 결과 표시
